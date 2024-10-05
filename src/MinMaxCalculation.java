@@ -10,6 +10,15 @@ public class MinMaxCalculation {
 
         int min = numbers.get(0);
         int max = numbers.get(0);
+	
+	for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+        }
 
         return new int[]{min, max};
     }
